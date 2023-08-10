@@ -1,0 +1,122 @@
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 95vh;
+    box-sizing: border-box;
+    /* background: url('https://products.ls.graphics/mesh-gradients/images/19.-Can-Can_1.jpg') center/cover; */
+    background: url('https://products.ls.graphics/mesh-gradients/images/09.-Light-Sky-Blue.jpg') center/cover no-repeat;
+    /* background: url('https://products.ls.graphics/mesh-gradients/images/98.-Torea-Bay.jpg') center/cover; */
+}
+
+.container {
+    display: grid;
+    width: 300px;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px white;
+}
+
+.box {
+    border-collapse: collapse;
+    border: 2px solid #615656;
+    height: 100px;
+    width: 100px;
+    color: #474343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    text-shadow: 0 0 2px white;
+    cursor: pointer;
+}
+
+.gray{
+    background-color: rgba(0 , 0, 0 , 0.3);
+}
+
+.box1 {
+    border-left: none;
+    border-top: none;
+}
+
+.box2 {
+    border-top: none;
+}
+
+.box3 {
+    border-right: none;
+    border-top: none;
+}
+
+.box4 {
+    border-left: none;
+}
+
+.box6 {
+    border-right: none;
+}
+
+.box7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+.box8 {
+    border-bottom: none;
+}
+
+.box9 {
+    border-right: none;
+    border-bottom: none;
+}
+.active{
+    visibility: hidden;
+}
+.player-box{
+    color: #000000;
+    font-family: 'Borel', cursive;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-transform: capitalize;
+}
+.bg{
+    border-radius: 30px;
+    padding: 0px 10px;
+    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.607);
+}
+.btn{
+    padding: 10px ;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+}
+.initial{ 
+    font-family: 'Borel', cursive;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: -20px;
+    color: #000000;
+}
+@media screen and (max-width:724px) {
+    .player-box{
+        font-size: 0.9rem;
+        justify-content: space-between;
+    }
+}
